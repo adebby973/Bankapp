@@ -16,20 +16,20 @@ export default function App() {
   function handleDeposit() {
     if (depositAmount > 100000000) {
       alert("cannot deposit");
-      return;
+    } else {
+      setBalance(balance + Number(depositAmount));
     }
-    setBalance(balance + Number(depositAmount));
-    setDepositAmount("");
     setShowDepositinput(false);
+    setDepositAmount("");
   }
   function handleWithrawal() {
     if (withdrawAmount > balance) {
       alert("balance is low");
     } else {
       setBalance(balance - Number(withdrawAmount));
-      setWithdrawAmount("");
-      setShowWithraw(false);
     }
+    setShowWithraw(false);
+    setWithdrawAmount("");
   }
   function handleLoan() {
     if (isLoanActive) {
