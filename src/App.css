@@ -1,0 +1,40 @@
+.app {
+  width: 90vw;
+}
+.app h1 {
+  text-align: center;
+  font-family: "Courier New", Courier;
+  margin-top: 1rem;
+  margin-bottom: 20px;
+  color: white;
+}
+.screen {
+  background-color: lavender;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.screen h4 {
+  margin-bottom: 10px;
+  font-family: system-ui;
+}
+
+.screen h2 {
+  font-size: 3rem;
+}
+.action {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.action button{
+  font-size: 2rem;
+}
+.input_container{
+  display: flex;
+}
+ input{
+  width: 100%;
+}
